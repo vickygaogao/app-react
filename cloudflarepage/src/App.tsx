@@ -41,7 +41,7 @@ function App() {
 
 
   async function fetchPrices() {
-    const result = await axios('http://coin-worker.gaoying.workers.dev/getEth')
+    const result = await axios('https://coin-worker.gaoying.workers.dev/getEth')
     console.log(result);
     if (result && result.status === 200) {
       const data: {[key: number]: number} = result.data
